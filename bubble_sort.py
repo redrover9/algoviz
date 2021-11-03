@@ -25,8 +25,10 @@ def algo(i):
             x_coordinates.append(x)
         for y in coordinates_dict.values():
             y_coordinates.append(y)
-        line, = ax.plot(x_coordinates, y_coordinates, color="blue")
-        return line,
+        line = ax.bar(x_coordinates, y_coordinates)
+        return line
+        #line, = ax.bar(x_coordinates, y_coordinates)
+        #return line,
 
 ani = animation.FuncAnimation(fig, algo)
 plt.show()
