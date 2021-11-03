@@ -27,8 +27,6 @@ def algo(i):
             y_coordinates.append(y)
         line = ax.bar(x_coordinates, y_coordinates)
         return line
-        #line, = ax.bar(x_coordinates, y_coordinates)
-        #return line,
 
 ani = animation.FuncAnimation(fig, algo)
 plt.show()
